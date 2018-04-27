@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
 }
-
 @font-face
 {
 	font-family: SGALT;
@@ -32,7 +31,7 @@ body {
 }
 header {
 	margin: 0;
-	background-color:#46aae6;
+	background-color:#46aae666;
 }
 
 main {
@@ -41,54 +40,46 @@ main {
 	position: relative;
 	min-height: 100%;
 	background-color: rgba(0,0,0,0.4);
-	padding-bottom: 5em; /*5em for footer +2em for normal padding*/
+	padding-bottom: 2.5em; /*5em for footer +2em for normal padding*/
+	padding-top: 2.5em;
 }
 
 h1 {
 	margin-top:0;
 	margin-bottom:0;
-	font-size: 2.5em;
+	font-size: 2em;
 	color: white;
+	font-family:sans-serif;
+}
+h2 {
+	margin-top:0;
+	margin-bottom:0;
+	font-size: 1.8em;
+	color: white;
+	font-family:sans-serif;
+}
+
+h3 {
+	margin-top:0;
+	margin-bottom:0;
+	font-size: 1.4em;
+	color: white;
+	font-family:sans-serif;
 }
 
 a:focus {
   outline: none;
 }
 
-p,#text,text {
-	font-size: 0.9em;
-	color:white;
-}
 
 a {
-	color: lime;
-	font-size: 0.9em;
 	font-weight: bold;
-	text-decoration: none;
-	padding: 0.5em;
-
-}
-
-input,textarea {
-	padding: 1em;
-	margin-bottom: 10px;
-	font-family: SGALT;
-	width: 100%;
-}
-
-textarea {
-	height: 5em;
-	resize: none;
 }
 
 ul {
 	color: white;
 	margin:0;
-	padding: 0;
-}
-
-button, input[type=button] {
-	padding: 0.3em;
+	padding: 0.1% 2%;
 }
 
 footer {
@@ -102,4 +93,60 @@ footer {
    	width:100%;
 }
 
+p.maintext {
+	font-size:1.3em;
+	font-family:sans-serif;
+	color: white;
+	padding:3% 3%;
+}
+li {
+	display: inline;
+}
+/*Navigation Bar*/
 
+/*a.navbar {
+	display: inline-block;
+	font-size: 1.5em;
+	font-family: sans-serif;
+}*/
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    padding: 0.1% 2%;
+    text-decoration: none;
+}
+
+li .dropdown:hover .dropbtn {
+    background-color: rgba(0,0,0,0.5);
+}
+
+li.dropdown, a.navbar {
+    display: inline-block;
+	font-size: 1.5em;
+	font-family: sans-serif;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:rgba(0,0,0,0.5);
+    min-width: 230px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	margin:3% 10%;
+	
+}
+
+.dropdown-content a:hover {background-color: black}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
