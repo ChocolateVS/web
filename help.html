@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Rowan"/>
+	<meta name="copyright" content="Rowan"/>
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Files - Home</title>
+	<meta name='description' content='Thorley-Files'/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- <script src="/pages/js/default.js"></script> -->
+	<link rel="stylesheet" type="text/css" href="assets\css\style.css">
+</head>
+
+<body background="assets\images\background.jpg">
+	<header>
+	    <center><img src="assets\images\banner.png" width="300em"></center>
+	    <nav>
+            <center>  
+				<ul>
+					<li><a class="navbar" href="index.html">Home</a></li>
+					<li><a class="navbar" href='#'>Web-Files</a></li>
+					<li><a class="navbar" href='#'>File-Server</a></li>
+					<li><a class="navbar" href='#'>Upload</a></li>
+					<li><a class="navbar" href='#'>Download</a></li>
+					<li><a class="navbar" href='help.html'>Help/About</a></li>
+					<li class="dropdown">
+						<a href="javascript:void(0)" class="dropbtn">Links&#9207;</a>
+						<div class="dropdown-content">
+							<a href="#">Github-Repo</a>
+							<a href="#">File-Server</a>
+							<a href="#">Web-Server</a>
+							<a href="#">Push Changes</a>
+						</div>
+					</li>
+				</ul>
+			</center>
+		</nav>
+	</header>
+	
+	<main>
+		<center>
+			<h1>How To Use The Website</h1>
+		</center>
+		<p class="maintext"> 
+		- To Download/Upload files and use most parts of the website
+		<br>
+		make sure you access the website on the guest network by going 
+		<br>
+		to 10.66.33.200 in your browser
+		<br>
+		<br>
+		If using the Website while not on guest, you should still be able
+		<br>
+		to view ALL Files on both servers
+		<br>
+		<br>
+		This Server is built using Linux-Mint ssh File Hosting 
+		<br>
+		Below are paths/links to the servers and required config/other files 
+		</p>
+		<center>
+			<h3>
+			Web/File Server IP on Guest network: 10.66.33.200
+			<br>
+			File-Server File Locations /home/rowan/shared
+			<br>
+			Web-Server File Locations /var/www/html (index.html)
+			<br>
+			File-Server address: \\Server-host\shared
+			<br>
+			Web-Server adress \\Server-host\web
+			<br>
+			Server Config File etc/samba/smb.conf
+			</h3>
+			
+		</center>
+	</main>
+	
+	<footer>
+		Created by <!-- <a href="https://rowansblog.tk"> -->Rowan Thorley</a>
+	</footer>
+</body>
+</html>
